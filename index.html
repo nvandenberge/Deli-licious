@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Deli-licious</title>
 </head>
-  <body>
-    <h1><span id="deli">Deli</span> - <span id="licious">licious<span></h1>
-    <p id="head">You can't spell delicious without deli!</p>
-    <form>
-      <fieldset>
-        <legend>Bread</legend>
+
+<body>
+  <h1><span id="deli">Deli</span> - <span id="licious">licious<span></h1>
+  <p id="head">Craft your own masterpiece!</p>
+  <form>
+    <fieldset>
+      <legend>Bread</legend>
+      <div class="bread">
+        <div>
         <label>
           <input type="radio" name="bread" value="White">White
         </label>
@@ -29,120 +33,131 @@
         <label>
           <input type="radio" name="bread" value="Gluten Free">Gluten Free
         </label>
-      </fieldset>
-<br>
-      <fieldset>
-        <legend>Meat(s)</legend>
-        <label>
-          <input type="checkbox" name="meats" value="Turkey">Turkey
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Ham">Ham
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Roast Beef">Roast Beef
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Steak">Steak
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Sliced Chicken Breast">Sliced Chicken Breast
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Italian Trio">Italian Trio
-        </label>
-        <label>
-          <input type="checkbox" name="meats" value="Veggie Only">Veggies Only
-        </label>
-      </fieldset>
-<br>
-        <fieldset>
-          <legend>Cheese</legend>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Meat(s)</legend>
+      <div class="meats">
+        <div>
+      <label>
+        <input type="checkbox" name="meats" value="Turkey">Turkey
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Ham">Ham
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Roast Beef">Roast Beef
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Steak">Steak
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" name="meats" value="Veggie Only">Pastrami
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Sliced Chicken Breast">Sliced Chicken Breast
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Sliced Italian Sausage">Sliced Italian Sausage
+      </label>
+      <label>
+        <input type="checkbox" name="meats" value="Veggie Only">Veggies Only
+      </label>
+    </div>
+    </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Cheese</legend>
+      <label>
+        <input type="radio" name="cheese" value="American">American
+      </label>
+      <label>
+        <input type="radio" name="cheese" value="Provolone">Provolone
+      </label>
+      <label>
+        <input type="radio" name="cheese" value="Cheddar">Cheddar
+      </label>
+      <label>
+        <input type="radio" name="cheese" value="Swiss">Swiss
+      </label>
+      <label>
+        <input type="radio" name="cheese" value="Pepper Jack">Pepper Jack
+      </label>
+      <label>
+        <input type="radio" name="cheese" value="Munster">Munster
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Toppings</legend>
+      <div class="toppings">
+        <div>
           <label>
-            <input type="radio" name="cheese" value="American">American
+            <input type="checkbox" name="toppings" value="Avacado">Avacado (&#43;1.50)
           </label>
           <label>
-            <input type="radio" name="cheese" value="Provolone">Provolone
+            <input type="checkbox" name="toppings" value="Crispy Bacon">Crispy Bacon (&#43;1.50)
           </label>
           <label>
-            <input type="radio" name="cheese" value="Cheddar">Cheddar
+            <input type="checkbox" name="toppings" value="Banana Peppers">Banana Peppers
           </label>
           <label>
-            <input type="radio" name="cheese" value="Swiss">Swiss
+            <input type="checkbox" name="toppings" value="Cucumber">Cucumber
           </label>
           <label>
-            <input type="radio" name="cheese" value="Pepper Jack">Pepper Jack
+            <input type="checkbox" name="toppings" value="Lettuce">Lettuce
           </label>
-          <label>
-            <input type="radio" name="cheese" value="Munster">Munster
-          </label>
-        </fieldset>
-<br>
-        <fieldset>
-          <legend>Toppings</legend>
-          <div class="Toppings-container">
-            <div class="toppings1">
-                <label>
-                  <input type="checkbox" name="toppings" value="Avacado">Avacado (&#43;1.50)
-                </label>
-                <label>
-                  <input type="checkbox" name="toppings" value="Crispy Bacon">Crispy Bacon (&#43;1.50)
-                </label>
-                <label>
-                  <input type="checkbox" name="toppings" value="Banana Peppers">Banana Peppers
-                </label>
-                <label>
-                  <input type="checkbox" name="toppings" value="Cucumber">Cucumber
-                </label>
-                <label>
-                  <input type="checkbox" name="toppings" value="Lettuce">Lettuce
-                </label>
-          </div>
+        </div>
 
-          <div class="toppings2">
-              <label>
-                <input type="checkbox" name="toppings" value="Spinach">Spinach
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Green Peppers">Green Peppers
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Olives">Olives
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Roasted Red Peppers">Roasted Red Peppers
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Raw Onions">Raw Onions
-              </label>
-            </div>
+        <div>
+          <label>
+            <input type="checkbox" name="toppings" value="Spinach">Spinach
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Green Peppers">Green Peppers
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Olives">Olives
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Roasted Red Peppers">Roasted Red Peppers
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Raw Onions">Raw Onions
+          </label>
+        </div>
 
-            <div class="toppings3">
-              <label>
-                <input type="checkbox" name="toppings" value="Carmelized Onions">Carmelized Onions
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Sweet Pickles">Sweet Pickles
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Pickles">Pickles
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="hot-peppers">Hot Peppers
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Tomatoes">Tomatoes
-              </label>
-              <label>
-                <input type="checkbox" name="toppings" value="Sauteed Mushrooms">Sauteed Mushrooms
-              </label>
-            </div>
-          </div>
-        </fieldset>
-<br>
-        <fieldset>
-          <legend>Condiments</legend>
-
+        <div>
+          <label>
+            <input type="checkbox" name="toppings" value="Carmelized Onions">Carmelized Onions
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Sweet Pickles">Sweet Pickles
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Pickles">Pickles
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="hot-peppers">Hot Peppers
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Tomatoes">Tomatoes
+          </label>
+          <label>
+            <input type="checkbox" name="toppings" value="Sauteed Mushrooms">Sauteed Mushrooms
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Condiments</legend>
+      <div class="condiments">
+        <div>
           <label>
             <input type="checkbox" name="condiments" value="Mayo">Mayo
           </label>
@@ -161,6 +176,9 @@
           <label>
             <input type="checkbox" name="condiments" value="Ranch">Ranch
           </label>
+        </div>
+
+        <div>
           <label>
             <input type="checkbox" name="condiments" value="Oil">Oil
           </label>
@@ -176,31 +194,41 @@
           <label>
             <input type="checkbox" name="condiments" value="Thousand Island">Thousand Island
           </label>
-        </fieldset>
-<br>
-          <fieldset>
-            <legend>Sides (Pick 2)</legend>
-            <label>
-              <input type="checkbox" name="sides" value="Chips">Chips
-            </label>
-            <label>
-              <input type="checkbox" name="sides" value="Fries">Fries
-            </label>
-            <label>
-              <input type="checkbox" name="sides" value="Coleslaw">Coleslaw
-            </label>
-            <label>
-              <input type="checkbox" name="sides" value="Mac n'Cheese">Mac n' Cheese
-            </label>
-            <label>
-              <input type="checkbox" name="sides" value="Dill Pickle">Dill Pickle
-            </label>
-            <label>
-              <input type="checkbox" name="sides" value="Side Salad">Side Salad
-            </label>
-          </fieldset>
-          <button type="submit">Submit Order -></button>
-    </form>
-    <script src="js/main.js" defer></script>
-  </body>
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Sides (Pick 2)</legend>
+      <div class="sides">
+        <div>
+          <label>
+            <input type="checkbox" name="sides" value="Chips">Chips
+          </label>
+          <label>
+            <input type="checkbox" name="sides" value="Fries">Fries
+          </label>
+          <label>
+            <input type="checkbox" name="sides" value="Coleslaw">Coleslaw
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox" name="sides" value="Mac n'Cheese">Mac n' Cheese
+          </label>
+          <label>
+            <input type="checkbox" name="sides" value="Dill Pickle">Dill Pickle
+          </label>
+          <label>
+            <input type="checkbox" name="sides" value="Side Salad">Side Salad
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <button type="submit">Submit Order -></button>
+  </form>
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>
