@@ -1,6 +1,13 @@
 /* < ========== Fonts ========== > */
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: black;
@@ -63,12 +70,13 @@ div {
   padding-right: 15px;
 }
 
-.toppings, .condiments, .sides, .bread, .meats{
+.bread, .meats, .cheeses, .toppings, .condiments, .sides, .confirm{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
 
 button {
   margin-top: 10px;
@@ -76,4 +84,9 @@ button {
   padding: 15px 15px;
   font-weight: bold;
   font-size: 1em;
+}
+
+input[type=text] {
+  height: 600px;
+  width: 200px;
 }
