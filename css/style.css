@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-
-html, body {
+html, body, div, label, button, input {
   margin: 0;
   padding: 0;
 }
@@ -41,7 +40,7 @@ h1 {
 
 form {
   text-align: center;
-  padding: 0 25% 0 25%;
+  padding: 0 30% 0 30%;
 }
 
 fieldset {
@@ -67,15 +66,26 @@ input[type=radio], input[type=checkbox] {
 }
 
 div {
-  padding-right: 15px;
+  border: solid white 2px;
 }
 
-.bread, .meats, .cheeses, .toppings, .condiments, .sides, .confirm{
+.breads {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+}
+
+.meats, .cheeses, .toppings, .condiments, .sides, .confirm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 79em) {
+  .meats > div{
+    ;
+
+  }
 }
 
 button {
@@ -86,7 +96,8 @@ button {
   font-size: 1em;
 }
 
+/*          CONFIRM PAGE           */
 input[type=text] {
-  height: 600px;
-  width: 200px;
+  height: 10em;
+  width: 5em;
 }
