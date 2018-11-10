@@ -62,6 +62,15 @@ label {
   margin-bottom: 7px;
 }
 
+/*           Adds space between columns        */
+
+.meats div, .toppings div, .condiments div {
+  padding-left: 30px;
+}
+
+/*           Adds space checkbox its name        */
+
+
 input[type=radio], input[type=checkbox] {
   margin-right: 8px;
 }
@@ -76,13 +85,15 @@ input[type=radio], input[type=checkbox] {
   justify-content: center;
 }
 
+/*           Centers all the checkboxes within the fieldsets         */
+
 .meats, .cheeses, .toppings, .condiments, .sides, .confirm {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/*           Media to align all divs under 1280px           */
+/*           Media to align all divs under 1280px (checkboxes)          */
 
 @media (max-width: 80em) {
   .meats div, .cheeses div, .toppings div, .condiments div, .sides div, .breads div{
@@ -90,6 +101,8 @@ input[type=radio], input[type=checkbox] {
     padding-left: 10%;
   }
 }
+
+/*           Styling for buttons       */
 
 button {
   margin-top: 10px;
