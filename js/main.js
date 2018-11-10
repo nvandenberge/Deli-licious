@@ -13,8 +13,8 @@
   function serializeCheckbox (form) {
     const checkboxes = Array.from(form.elements).filter(element => element.type === 'checkbox');
 
-    const checkedCheckbox = checkboxes.filter(checkbox => checkbox.checked === true);
-    return checkedRadio
+    const checkedBox = checkboxes.filter(checkbox => checkbox.checked === true);
+    return checkedBox
   }
 
   console.log(serializeRadio(form));
