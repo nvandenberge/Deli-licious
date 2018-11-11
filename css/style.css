@@ -38,14 +38,31 @@ h1 {
   margin-bottom: 55px;
 }
 
-main {
-  display: grid;
-
-
+#split{
+  display: flex;
+  flex-direction: row;
 }
+
+#left {
+   display: flex;
+   align-items: center;
+ }
+
+#right {
+  display: flex;
+  border: 2px solid red;
+  padding-left: 10%;
+}
+
+#order {
+  display: flex;
+  position: fixed;
+  border: 2px solid yellow;
+}
+
 form {
   text-align: center;
-  padding: 0 30% 0 30%;
+  padding: 0 10% 0 10%;
 }
 
 fieldset {

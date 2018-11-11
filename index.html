@@ -11,10 +11,13 @@
 </head>
 
 <body>
+  <header>
   <h1><span id="deli">Deli</span> - <span id="licious">licious<span></h1>
   <p id="head">Craft your own masterpiece!</p>
-<main>
-  <section class="left">
+</header>
+
+<div id="split">
+  <section id="left">
     <form>
       <fieldset>
         <legend>Bread</legend>
@@ -229,21 +232,22 @@
     </form>
   </section>
 
-  <section class="right">
+<section id="right">
+  <div id="order">
     <form>
       <fieldset>
         <legend>Your Sandwich</legend>
-        <div class="confirm">
-          <div>
             <label>
               <input type="text" name="bread" value="">
             </label>
       </fieldset>
        <button type="submit">Submit Order --></button>
     </form>
+   </div>
   </section>
-</main>
-  <script src="js/main.js" defer></script>
+</div>
+
+<script src="js/main.js" defer></script>
 </body>
 
 </html>
