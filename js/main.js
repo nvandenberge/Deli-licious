@@ -18,3 +18,19 @@
   }
 
 // This loop will place a two selection limit to the 'Sides' section
+
+function sidesLimit(sides, limit){
+	var sides = document.getElementsByName('sides');
+	var limit = 2
+	for (let i = 0; i < sides.length; i++){
+		sides[i].onclick=function(){
+		let checkedcount = 0
+		for (let i = 0; i < sides.length; i++)
+			checkedcount += (sides[i].checked)? 1 : 0
+		if (checkedcount > limit){
+			alert("You may only select a maximum of "+limit+" sides")
+			this.checked=false
+			}
+		}
+	}
+}

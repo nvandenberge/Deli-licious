@@ -38,26 +38,41 @@ h1 {
   margin-bottom: 55px;
 }
 
-#split{
+#split {
   display: flex;
   flex-direction: row;
 }
 
 #left {
-   display: flex;
-   align-items: center;
- }
+  display: flex;
+  align-items: center;
+}
 
 #right {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-left: 10%;
+  min-height: 275px;
+  min-width: 200px;
 }
 
 #order {
   display: flex;
   position: fixed;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
+}
+
+#yourSandwich {
+  background-color: white;
+  height: 50vh;
+}
+
+h2 {
+  color: black;
+  font-family: 'Marck Script', cursive;
+  text-decoration: underline;
+  text-align: left;
+
 }
 
 form {
@@ -85,14 +100,11 @@ label {
 }
 
 /*           Adds space between columns        */
-
 .meats div, .toppings div, .condiments div {
   padding-left: 30px;
 }
 
 /*           Adds space checkbox its name        */
-
-
 input[type=radio], input[type=checkbox] {
   margin-right: 8px;
 }
@@ -100,7 +112,6 @@ input[type=radio], input[type=checkbox] {
 /* div {
   border: solid white 1px;
 } */
-
 .breads {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +119,6 @@ input[type=radio], input[type=checkbox] {
 }
 
 /*           Centers all the checkboxes within the fieldsets         */
-
 .meats, .cheeses, .toppings, .condiments, .sides, .confirm {
   display: flex;
   flex-wrap: wrap;
@@ -116,16 +126,14 @@ input[type=radio], input[type=checkbox] {
 }
 
 /*           Media to align all divs under 1280px (checkboxes)          */
-
 @media (max-width: 80em) {
-  .meats div, .cheeses div, .toppings div, .condiments div, .sides div, .breads div{
+  .meats div, .cheeses div, .toppings div, .condiments div, .sides div, .breads div {
     min-width: 10em;
     padding-left: 10%;
   }
 }
 
 /*           Styling for buttons       */
-
 button {
   margin-top: 10px;
   text-align: center;
