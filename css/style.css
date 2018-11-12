@@ -46,25 +46,23 @@ h1 {
 #left {
   display: flex;
   align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 #right {
-  display: flex;
-  /* border: 2px solid red; */
-  padding-left: 10%;
-  min-height: 275px;
-  min-width: 200px;
+
 }
 
 #order {
-  display: flex;
   position: fixed;
-  /* border: 2px solid yellow; */
+  border: 2px solid yellow;
+  min-width: 350px;
 }
 
 #yourSandwich {
   background-color: white;
-  height: 50vh;
+  height: 45vh;
 }
 
 h2 {
@@ -107,6 +105,7 @@ label {
 /*           Adds space checkbox its name        */
 input[type=radio], input[type=checkbox] {
   margin-right: 8px;
+  font-size: 1em;
 }
 
 /* div {
