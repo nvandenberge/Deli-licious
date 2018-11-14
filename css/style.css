@@ -132,6 +132,11 @@ input[type=radio], input[type=checkbox] {
   }
 }
 
+#output {
+  color: black;
+  text-align: left;
+}
+
 /*           Styling for buttons       */
 button {
   margin-top: 10px;

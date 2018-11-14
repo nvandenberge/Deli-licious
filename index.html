@@ -18,7 +18,7 @@
 
   <div id='split'>
     <section id='left'>
-      <form id='menu'>
+      <form id='menu' onclick="serializeCheckbox(form)">
         <fieldset>
           <legend>Bread</legend>
           <div class='breads'>
@@ -239,11 +239,14 @@
           <fieldset>
             <legend>Your Sandwich</legend>
             <div id='yourSandwich'>
-              <h2>Bread</h2>
+              <p id='output'>
+                sss
+              </p>
+              <!-- <h2>Bread</h2>
               <h2>Cheese</h2>
               <h2>Meat</h2>
               <h2>Toppings</h2>
-              <h2>Condiments</h2>
+              <h2>Condiments</h2> -->
             </div>
           </fieldset>
           <button type='submit'>Submit Order --></button>
