@@ -1,5 +1,5 @@
 
-  const form = document.querySelector('form');
+const form = document.querySelector('form');
 
 //This function will create an array from the radio buttons and return which every one is checked
   function serializeRadio (form) {
@@ -15,6 +15,25 @@
     const checkedBoxes = checkboxes.filter(checkbox => checkbox.checked === true);
     const checkedData = checkedBoxes.map(checkbox => checkbox.value);
     return checkedData;
+  }
+
+  //This function will update the order form when a value is selected/deselected
+
+  function addMenuItem() {
+    var menuItem = document.getElementsByClassName('menuItem');
+    var inputArea = document.querySelector('h2');
+    var li = document.createElement('li');
+      for (let i = 0; i < menuItem.length; i++){
+        menuItem[i].onclick=function(){
+        if (menuItem.checked === true) {
+          console.log(menuItem.value[i]);
+
+        // li.createTextNode = menuItem.value;
+        // inputArea.append(li);
+        //   event.preventDefault();
+        }
+      }
+    }
   }
 
 // This loop will place a two selection limit to the 'Sides' section
@@ -34,3 +53,8 @@ function sidesLimit(sides, limit){
 		}
 	}
 }
+
+
+// var listItem = document.createElement('li');
+// var menuItem = document.getElementById('yourSandwich')
+// var input = document.querySelectorAll('input');
