@@ -18,7 +18,7 @@
 
   <div id='split'>
     <section id='left'>
-      <form id='menu' onclick="serializeCheckbox(form)">
+      <form id='menu' onclick="serializeCheckbox (form)">
         <fieldset>
           <legend>Bread</legend>
           <div class='breads'>
@@ -148,7 +148,7 @@
                 <input type='checkbox' name='toppings' value='Pickles' class='menuItem'>Pickles
               </label>
               <label>
-                <input type='checkbox' name='toppings' value='hot-peppers' class='menuItem'>Hot Peppers
+                <input type='checkbox' name='toppings' value='Hot Peppers' class='menuItem'>Hot Peppers
               </label>
               <label>
                 <input type='checkbox' name='toppings' value='Tomatoes' class='menuItem'>Tomatoes
@@ -209,22 +209,22 @@
           <div class='sides'>
             <div>
               <label>
-                <input type='checkbox' name='sides' value='Chips' class='menuItem' onclick='return sidesLimit()'>Chips
+                <input type='checkbox' name='sides' value='Chips' class='menuItem, sideItem' onclick='maxTwo()'>Chips
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Fries' class='menuItem' onclick='return sidesLimitsidesLimit()'>Fries
+                <input type='checkbox' name='sides' value='Fries' class='menuItem, sideItem' onclick='maxTwo()'>Fries
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Coleslaw' class='menuItem' onclick='return sidesLimit()'>Coleslaw
+                <input type='checkbox' name='sides' value='Coleslaw' class='menuItem, sideItem' onclick='maxTwo()'>Coleslaw
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Mac n'Cheese' class='menuItem' onclick='return sidesLimit()'>Mac n' Cheese
+                <input type='checkbox' name='sides' value='Mac n Cheese' class='menuItem, sideItem' onclick='maxTwo()'>Mac n Cheese
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Dill Pickle' class='menuItem' onclick='return sidesLimit()'>Dill Pickle
+                <input type='checkbox' name='sides' value='Dill Pickle' class='menuItem, sideItem' onclick='maxTwo()'>Dill Pickle
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Side Salad' class='menuItem' onclick='return sidesLimit()'>Side Salad
+                <input type='checkbox' name='sides' value='Side Salad' class='menuItem, sideItem' onclick='maxTwo()'>Side Salad
               </label>
             </div>
           </div>
@@ -239,14 +239,9 @@
           <fieldset>
             <legend>Your Sandwich</legend>
             <div id='yourSandwich'>
-              <p id='output'>
-                sss
-              </p>
-              <!-- <h2>Bread</h2>
-              <h2>Cheese</h2>
-              <h2>Meat</h2>
-              <h2>Toppings</h2>
-              <h2>Condiments</h2> -->
+              <div id='output'>
+
+            </div>
             </div>
           </fieldset>
           <button type='submit'>Submit Order --></button>

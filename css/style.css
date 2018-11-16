@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i');
+
 
 html, body, div, label, button, input {
   margin: 0;
@@ -21,7 +23,8 @@ h1 {
 }
 
 #deli {
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   letter-spacing: 4px;
 }
@@ -49,22 +52,20 @@ h1 {
   padding-right: 10%;
   padding-left: 10%;
 }
-
-#right {
-
+#yourSandwich {
+  background-color: white;
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 #order {
   position: fixed;
   border: 2px solid yellow;
-  min-width: 350px;
+  width: 350px;
 }
 
-#yourSandwich {
-  background-color: white;
-  height: 45vh;
-}
 
+/* Style for output sections */
 h2 {
   color: black;
   font-family: 'Marck Script', cursive;
@@ -102,15 +103,13 @@ label {
   padding-left: 30px;
 }
 
-/*           Adds space checkbox its name        */
+/*           Adds space between checkbox and its name        */
 input[type=radio], input[type=checkbox] {
   margin-right: 8px;
   font-size: 1em;
 }
 
-/* div {
-  border: solid white 1px;
-} */
+
 .breads {
   display: flex;
   flex-wrap: wrap;
