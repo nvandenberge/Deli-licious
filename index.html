@@ -18,7 +18,7 @@
 
   <div id='split'>
     <section id='left'>
-      <form id='menu' onclick="serializeCheckbox (form)">
+      <form id='menu'>
         <fieldset>
           <legend>Bread</legend>
           <div class='breads'>
@@ -209,22 +209,22 @@
           <div class='sides'>
             <div>
               <label>
-                <input type='checkbox' name='sides' value='Chips' class='menuItem, sideItem' onclick='maxTwo()'>Chips
+                <input type='checkbox' name='sides' value='Chips' class='menuItem, sideItem'>Chips
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Fries' class='menuItem, sideItem' onclick='maxTwo()'>Fries
+                <input type='checkbox' name='sides' value='Fries' class='menuItem, sideItem'>Fries
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Coleslaw' class='menuItem, sideItem' onclick='maxTwo()'>Coleslaw
+                <input type='checkbox' name='sides' value='Coleslaw' class='menuItem'>Coleslaw
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Mac n Cheese' class='menuItem, sideItem' onclick='maxTwo()'>Mac n Cheese
+                <input type='checkbox' name='sides' value='Mac n Cheese' class='menuItem'>Mac n Cheese
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Dill Pickle' class='menuItem, sideItem' onclick='maxTwo()'>Dill Pickle
+                <input type='checkbox' name='sides' value='Dill Pickle' class='menuItem'>Dill Pickle
               </label>
               <label>
-                <input type='checkbox' name='sides' value='Side Salad' class='menuItem, sideItem' onclick='maxTwo()'>Side Salad
+                <input type='checkbox' name='sides' value='Side Salad' class='menuItem'>Side Salad
               </label>
             </div>
           </div>
@@ -239,9 +239,14 @@
           <fieldset>
             <legend>Your Sandwich</legend>
             <div id='yourSandwich'>
-              <div id='output'>
-
-            </div>
+              <ul id='output'>
+                <h2>Bread</h2>
+                <h2>Cheese</h2>
+                <h2>Meat</h2>
+                <h2>Toppings</h2>
+                <h2>Condiments</h2>
+                <h2>Sides</h2>
+              </ul>
             </div>
           </fieldset>
           <button type='submit'>Submit Order --></button>

@@ -52,9 +52,14 @@ h1 {
   padding-right: 10%;
   padding-left: 10%;
 }
+
+#order form {
+  padding-bottom: 5%;
+}
+
 #yourSandwich {
   background-color: white;
-  height: 50vh;
+  height: 40vh;
   overflow-y: scroll;
 }
 
@@ -64,14 +69,13 @@ h1 {
   width: 350px;
 }
 
-
 /* Style for output sections */
 h2 {
   color: black;
   font-family: 'Marck Script', cursive;
   text-decoration: underline;
   text-align: left;
-
+  font-size: 1.2em;
 }
 
 form {
