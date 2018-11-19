@@ -59,7 +59,7 @@ h1 {
 
 #yourSandwich {
   background-color: white;
-  height: 40vh;
+  height: auto;
   overflow-y: scroll;
 }
 
@@ -138,6 +138,11 @@ input[type=radio], input[type=checkbox] {
 #output {
   color: black;
   text-align: left;
+}
+
+li {
+  text-decoration: none;
+  color: red;
 }
 
 /*           Styling for buttons       */
