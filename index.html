@@ -46,22 +46,22 @@
           <div class='cheeses'>
             <div>
               <label>
-                <input type='radio' name='cheese' value='American' class='menuItem'>American
+                <input type='radio' name='cheese' value='American' class='menuItem, cheeseItem'>American
               </label>
               <label>
-                <input type='radio' name='cheese' value='Provolone' class='menuItem'>Provolone
+                <input type='radio' name='cheese' value='Provolone' class='menuItem, cheeseItem'>Provolone
               </label>
               <label>
-                <input type='radio' name='cheese' value='Cheddar' class='menuItem'>Cheddar
+                <input type='radio' name='cheese' value='Cheddar' class='menuItem, cheeseItem'>Cheddar
               </label>
               <label>
-                <input type='radio' name='cheese' value='Swiss' class='menuItem'>Swiss
+                <input type='radio' name='cheese' value='Swiss' class='menuItem, cheeseItem'>Swiss
               </label>
               <label>
-                <input type='radio' name='cheese' value='Pepper Jack' class='menuItem'>Pepper Jack
+                <input type='radio' name='cheese' value='Pepper Jack' class='menuItem, cheeseItem'>Pepper Jack
               </label>
               <label>
-                <input type='radio' name='cheese' value='Munster' class='menuItem'>Munster
+                <input type='radio' name='cheese' value='Munster' class='menuItem, cheeseItem'>Munster
               </label>
             </div>
           </div>
@@ -72,30 +72,30 @@
           <div class='meats'>
             <div>
               <label>
-                <input type='radio' name='meats' value='Turkey' class='menuItem'>Turkey
+                <input type='radio' name='meats' value='Turkey' class='menuItem, meatItem'>Turkey
               </label>
               <label>
-                <input type='radio' name='meats' value='Ham' class='menuItem'>Ham
+                <input type='radio' name='meats' value='Ham' class='menuItem, meatItem'>Ham
               </label>
               <label>
-                <input type='radio' name='meats' value='Roast Beef' class='menuItem'>Roast Beef
+                <input type='radio' name='meats' value='Roast Beef' class='menuItem, meatItem'>Roast Beef
               </label>
               <label>
-                <input type='radio' name='meats' value='Steak' class='menuItem'>Steak
+                <input type='radio' name='meats' value='Steak' class='menuItem, meatItem'>Steak
               </label>
             </div>
             <div>
               <label>
-                <input type='radio' name='meats' value='Veggie Only' class='menuItem'>Pastrami
+                <input type='radio' name='meats' value='Veggie Only' class='menuItem, meatItem'>Pastrami
               </label>
               <label>
-                <input type='radio' name='meats' value='Sliced Chicken Breast' class='menuItem'>Sliced Chicken Breast
+                <input type='radio' name='meats' value='Sliced Chicken Breast' class='menuItem, meatItem'>Sliced Chicken Breast
               </label>
               <label>
-                <input type='radio' name='meats' value='Sliced Italian Sausage' class='menuItem'>Sliced Italian Sausage
+                <input type='radio' name='meats' value='Sliced Italian Sausage' class='menuItem, meatItem'>Sliced Italian Sausage
               </label>
               <label>
-                <input type='radio' name='meats' value='Veggie Only' class='menuItem'>Veggies Only
+                <input type='radio' name='meats' value='Veggie Only' class='menuItem, meatItem'>Veggies Only
               </label>
             </div>
           </div>
@@ -232,21 +232,14 @@
       </form>
     </section>
 
-
     <section id='right'>
       <div id='order'>
         <form>
           <fieldset>
             <legend>Your Sandwich</legend>
             <div id='yourSandwich'>
-              <ul id='output'>
-                <h2 id ='bread-select'>Bread</h2>
-                <h2 id ='cheese-select'>Cheese</h2>
-                <h2 id ='meat-select'>Meat</h2>
-                <h2 id ='toppings-select'>Toppings</h2>
-                <h2 id ='condiments-select'>Condiments</h2>
-                <h2 id ='sides-select'>Sides</h2>
-              </ul>
+              <div id="radioButtons"></div>
+              <div id="checkboxButtons"></div>
             </div>
           </fieldset>
           <button type='submit'>Submit Order --></button>
@@ -255,9 +248,18 @@
     </section>
   </div>
 
-  <script src='js/main.js' defer>
-
+  <script src='js/main.js' defer> // script is exucted after page finishes parsing
   </script>
 </body>
 
 </html>
+
+
+<!-- <ul id='output'>
+  <h2 id ='bread-select'>Bread</h2>
+  <h2 id ='cheese-select'>Cheese</h2>
+  <h2 id ='meat-select'>Meat</h2>
+  <h2 id ='toppings-select'>Toppings</h2>
+  <h2 id ='condiments-select'>Condiments</h2>
+  <h2 id ='sides-select'>Sides</h2>
+</ul> -->
