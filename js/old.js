@@ -100,3 +100,12 @@ function addRadio() {
     bread.appendChild(li); //creates new <li> element under bread header
   }
 }
+
+//Can be used in addCheckbox function under const data
+const checkboxData = checkedBoxes.reduce((obj, checkbox) => {
+  obj[checkbox.name] = [...(obj[checkbox.name] || []), checkbox.value];
+  return obj;
+}, {});
+checkboxButtons.innerHTML = renderCheckbox(checkboxData);
+}
+}
